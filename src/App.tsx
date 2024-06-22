@@ -1,11 +1,13 @@
 import { useState } from 'react';
-import reactLogo from './assets/react.svg';
+import reactLogo from './assets/svgs/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
+import { CacheKey } from '@common/constant';
 
 function App() {
   const [count, setCount] = useState(0);
-
+  const data = CacheKey.Theme;
+  console.log(data);
   return (
     <>
       <div>
