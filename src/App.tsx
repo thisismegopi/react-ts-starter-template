@@ -1,6 +1,5 @@
-import './App.css';
-
 import { CacheKey } from '@common/constant';
+import { ModeToggle } from '@components/ModeToggle';
 import { reactQueryDebugging } from '@config/env';
 import ReactQueryDevtoolsProduction from '@hooks/rq/rq-dev-tools';
 import { queryClient } from '@lib/query-client';
@@ -14,6 +13,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <ThemeProvider defaultTheme="dark" storageKey={CacheKey.Theme}>
         <Router />
+        <ModeToggle />
       </ThemeProvider>
       <ReactQueryDevtoolsProduction enabled={reactQueryDebugging} />
     </QueryClientProvider>

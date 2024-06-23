@@ -1,0 +1,15 @@
+@import './colors.scss';
+
+:root {
+  --background: #{$slate-200};
+  --forground: #{$slate-900};
+}
+
+.dark {
+  --background: #{$slate-900};
+  --forground: #{$slate-200};
+}
+
+@function color($var-name) {
+  @return var(--#{$var-name});
+}

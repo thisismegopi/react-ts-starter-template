@@ -1,0 +1,16 @@
+.mode-toggle-container {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+  .mode-toggle {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 50%;
+  }
+}

@@ -1,0 +1,15 @@
+@import './theme/theme.scss';
+@import './theme/viewport.scss';
+
+* {
+  transition: color 0.1s ease-in-out;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: color('background');
+  color: color('forground');
+}
