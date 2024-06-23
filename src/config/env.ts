@@ -1,6 +1,7 @@
-import { EnvList } from '../common/types'; // do not use alias here. required in vite.config manually
 import { createEnv } from '@t3-oss/env-core';
 import { z } from 'zod';
+
+import { EnvList } from '../common/types'; // do not use alias here. required in vite.config manually
 
 export const env = createEnv({
   /**
